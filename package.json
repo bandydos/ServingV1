@@ -12,6 +12,7 @@
   "author": "Alexander Tack",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "express": "^4.17.1"
   }
 }
