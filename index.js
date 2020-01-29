@@ -1,8 +1,9 @@
-//server code
-
-const express = require("express");
-const app = express();
-app.listen(3000, () => console.log("Listening on 3000."));
-app.use(express.static("public")); //Folder public.
-app.use(express.static("node_modules/jquery/dist")); //Use jQuery.
-app.use(express.static("node_modules/bootstrap/dist")); //Use bootstrap.
+//Server code.
+const express = require("express"); //Require express.
+const app = express(); //Init app.
+app.listen(3000, function () {
+    console.log("Listening (3000).");
+});
+//Serving static content.
+app.use(express.static("public")); //Use folder public.
+app.use(express.static("node_modules")); //Use node modules.
